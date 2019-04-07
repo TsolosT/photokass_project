@@ -10,62 +10,84 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="rootpane" maxHeight="985.0" maxWidth="1237.0" prefHeight="803.0" prefWidth="1227.0" style="-fx-background-color:#2F4F4F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<AnchorPane fx:id="rootpane" maxHeight="985.0" maxWidth="1237.0" prefHeight="699.0" prefWidth="1227.0" style="-fx-background-color:#2F4F4F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
-      <TabPane id="tab" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="579.0" prefHeight="604.0" prefWidth="287.0" style="-fx-background-color: #778899;" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="197.0">
+      <TabPane id="tab" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="579.0" prefHeight="589.0" prefWidth="287.0" style="-fx-background-color: #778899;" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="110.0">
         <tabs>
           <Tab text="Content">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="297.0" style="-fx-background-color: white;">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="11.0" layoutY="14.0" prefHeight="27.0" prefWidth="111.0" text="Header Text:">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="textFieldHeader" layoutX="10.0" layoutY="47.0" />
-                        <Label layoutX="10.0" layoutY="79.0" prefHeight="27.0" prefWidth="105.0" text="Main Text:">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextArea fx:id="textArea" layoutX="10.0" layoutY="106.0" prefHeight="221.0" prefWidth="271.0" wrapText="true" />
-                        <TextField fx:id="textFieldFooter" layoutX="14.0" layoutY="408.0" />
-                        <Label layoutX="10.0" layoutY="381.0" prefHeight="17.0" prefWidth="97.0" text="Footer Text:">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <Button id="headerAdd" layoutX="172.0" layoutY="47.0" mnemonicParsing="false" onAction="#AddHeader" text="Apply" />
-                        <Button id="headerRemove" layoutX="222.0" layoutY="47.0" mnemonicParsing="false" onAction="#RemoveHeader" text="Remove" />
-                        <Button id="taApply" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#AddText" prefHeight="33.0" prefWidth="62.0" text="Apply" />
-                        <Button id="taRemove" layoutX="84.0" layoutY="334.0" mnemonicParsing="false" onAction="#RemoveText" prefHeight="33.0" prefWidth="63.0" text="Remove" />
-                        <Button id="addFooter" layoutX="172.0" layoutY="408.0" mnemonicParsing="false" onAction="#AddFooter" text="Apply" />
-                        <Button id="RemoveFooter" layoutX="222.0" layoutY="408.0" mnemonicParsing="false" onAction="#RemoveFooter" text="Remove" />
-                        <Label layoutX="13.0" layoutY="441.0" prefHeight="36.0" prefWidth="107.0" text="Insert Logo :">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <Button id="uploadLogo" layoutX="120.0" layoutY="447.0" mnemonicParsing="false" onAction="#UploadAddLogo" text="Upload&amp;Add" />
-                        <Button id="removeLogo" layoutX="222.0" layoutY="447.0" mnemonicParsing="false" onAction="#RemoveLogo" text="Remove" />
-                        <Label layoutX="13.0" layoutY="485.0" prefHeight="25.0" prefWidth="126.0" text="Background Image :" wrapText="true">
-                           <font>
-                              <Font size="13.0" />
-                           </font>
-                        </Label>
-                        <Button id="addBG" layoutX="140.0" layoutY="485.0" mnemonicParsing="false" onAction="#AddBgImage" text="Add" />
-                        <Button id="bgImgRemove" layoutX="190.0" layoutY="485.0" mnemonicParsing="false" onAction="#BgImageRemove" text="Remove" />
-                        <Label layoutX="15.0" layoutY="505.0" prefHeight="47.0" prefWidth="122.0" text="Product Image :" wrapText="true">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Label>
-                        <Button id="addP" layoutX="149.0" layoutY="516.0" mnemonicParsing="false" onAction="#AddProImage" text="Add" />
-                        <Button id="pImgRemove" layoutX="195.0" layoutY="517.0" mnemonicParsing="false" onAction="#ProdImageRemove" text="Remove" />
+                        <TabPane prefHeight="556.0" prefWidth="287.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Text">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="297.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <Label layoutX="11.0" layoutY="7.0" prefHeight="27.0" prefWidth="111.0" text="Header Text:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="textFieldHeader" layoutX="10.0" layoutY="35.0" />
+                                          <Label layoutX="14.0" layoutY="60.0" prefHeight="27.0" prefWidth="105.0" text="Main Text:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="textArea" layoutX="8.0" layoutY="87.0" prefHeight="221.0" prefWidth="271.0" wrapText="true" />
+                                          <TextField fx:id="textFieldFooter" layoutX="14.0" layoutY="396.0" />
+                                          <Label layoutX="18.0" layoutY="361.0" prefHeight="17.0" prefWidth="97.0" text="Footer Text:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button id="headerAdd" layoutX="167.0" layoutY="35.0" mnemonicParsing="false" onAction="#AddHeader" text="Apply" />
+                                          <Button id="headerRemove" layoutX="220.0" layoutY="35.0" mnemonicParsing="false" onAction="#RemoveHeader" text="Remove" />
+                                          <Button id="taApply" layoutX="15.0" layoutY="318.0" mnemonicParsing="false" onAction="#AddText" prefHeight="33.0" prefWidth="62.0" text="Apply" />
+                                          <Button id="taRemove" layoutX="88.0" layoutY="318.0" mnemonicParsing="false" onAction="#RemoveText" prefHeight="33.0" prefWidth="63.0" text="Remove" />
+                                          <Button id="addFooter" layoutX="167.0" layoutY="396.0" mnemonicParsing="false" onAction="#AddFooter" text="Apply" />
+                                          <Button id="RemoveFooter" layoutX="222.0" layoutY="396.0" mnemonicParsing="false" onAction="#RemoveFooter" text="Remove" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab style="-fx-background-color: sfas;" text="Image">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #CDCBCB;">
+                                       <children>
+                                          <Button id="pImgRemove" layoutX="214.0" layoutY="14.0" mnemonicParsing="false" onAction="#ProdImageRemove" text="Remove" />
+                                          <Button id="addP" layoutX="153.0" layoutY="14.0" mnemonicParsing="false" onAction="#AddProImage" text="Add" />
+                                          <Label layoutX="11.0" layoutY="3.0" prefHeight="47.0" prefWidth="122.0" text="Product Image :" wrapText="true">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="prodImage" fitHeight="145.0" fitWidth="270.0" layoutX="11.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="bgImage" fitHeight="151.0" fitWidth="277.0" layoutX="8.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button id="bgImgRemove" layoutX="214.0" layoutY="218.0" mnemonicParsing="false" onAction="#BgImageRemove" text="Remove" />
+                                          <Button id="addBG" layoutX="153.0" layoutY="218.0" mnemonicParsing="false" onAction="#AddBgImage" text="Add" />
+                                          <Label layoutX="8.0" layoutY="218.0" prefHeight="25.0" prefWidth="126.0" text="Background Image :" wrapText="true">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button id="removeLogo" layoutX="222.0" layoutY="446.0" mnemonicParsing="false" onAction="#RemoveLogo" text="Remove" />
+                                          <Button id="uploadLogo" layoutX="129.0" layoutY="446.0" mnemonicParsing="false" onAction="#UploadAddLogo" text="Upload&amp;Add" />
+                                          <Label layoutX="18.0" layoutY="440.0" prefHeight="36.0" prefWidth="107.0" text="Insert Logo :">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
                      </children>
                   </AnchorPane>
-            </content>
+               </content>
           </Tab>
           <Tab text=" Text-Properties">
             <content>
@@ -317,11 +339,9 @@
             </Tab>
         </tabs>
       </TabPane>
-      <ImageView fx:id="prodImage" fitHeight="102.0" fitWidth="120.0" layoutX="511.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="bgImage" fitHeight="95.0" fitWidth="127.0" layoutX="295.0" layoutY="704.0" pickOnBounds="true" preserveRatio="true" />
       <Separator layoutX="291.0" layoutY="695.0" prefHeight="4.0" prefWidth="931.0" style="-fx-background-color: #D3D3D3;" />
-      <Separator layoutX="288.0" orientation="VERTICAL" prefHeight="803.0" prefWidth="6.0" style="-fx-background-color: #D3D3D3;" />
-      <Separator layoutX="1216.0" orientation="VERTICAL" prefHeight="803.0" prefWidth="6.0" style="-fx-background-color: #D3D3D3;" />
+      <Separator layoutX="288.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="6.0" style="-fx-background-color: #D3D3D3;" />
+      <Separator layoutX="1216.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="6.0" style="-fx-background-color: #D3D3D3;" />
       <AnchorPane fx:id="picture" layoutX="295.0" layoutY="8.0" prefHeight="689.0" prefWidth="924.0">
          <children>
             <ImageView fx:id="bgimg" fitHeight="689.0" fitWidth="924.0" pickOnBounds="true" />
@@ -337,14 +357,14 @@
             </Pane>
          </children>
       </AnchorPane>
-      <Pane layoutY="2.0" prefHeight="198.0" prefWidth="287.0" style="-fx-background-color: #D3D3D3;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0">
+      <Pane layoutY="2.0" prefHeight="108.0" prefWidth="287.0" style="-fx-background-color: #D3D3D3;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0">
          <children>
-            <Label layoutX="14.0" prefHeight="47.0" prefWidth="169.0" text="PhotoKass" textFill="#090914" underline="true">
+            <Label layoutX="14.0" prefHeight="25.0" prefWidth="169.0" text="PhotoKass" textFill="#090914" underline="true">
                <font>
                   <Font name="Bell MT Italic" size="21.0" />
                </font>
             </Label>
-            <MenuBar layoutX="29.0" layoutY="51.0" prefHeight="25.0" prefWidth="111.0">
+            <MenuBar layoutX="14.0" layoutY="39.0" prefHeight="25.0" prefWidth="111.0">
                <menus>
                   <Menu mnemonicParsing="false" text="Image Upload">
                     <items>
@@ -354,28 +374,18 @@
                   </Menu>
                </menus>
             </MenuBar>
-            <Button layoutX="157.0" layoutY="51.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="102.0" text="Save" />
-            <Button id="help" layoutX="30.0" layoutY="144.0" mnemonicParsing="false" onAction="#displayHelpPage" prefHeight="25.0" prefWidth="111.0" text="Help" />
-            <Button id="about" layoutX="156.0" layoutY="144.0" mnemonicParsing="false" onAction="#displayAboutPage" prefHeight="25.0" prefWidth="102.0" text="About" />
-            <Button id="clearAllbtn" layoutX="157.0" layoutY="93.0" mnemonicParsing="false" onAction="#ClearAll" prefHeight="25.0" prefWidth="102.0" text="Clear All" />
-            <ComboBox fx:id="outputSize" layoutX="30.0" layoutY="93.0" prefHeight="25.0" prefWidth="111.0" promptText="Choose size" style="-fx-background-color: white;" />
+            <Button layoutX="144.0" layoutY="39.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="61.0" text="Save" />
+            <Button id="help" layoutX="144.0" layoutY="74.0" mnemonicParsing="false" onAction="#displayHelpPage" prefHeight="25.0" prefWidth="61.0" text="Help" />
+            <Button id="about" layoutX="212.0" layoutY="74.0" mnemonicParsing="false" onAction="#displayAboutPage" prefHeight="25.0" prefWidth="61.0" text="About" />
+            <Button id="clearAllbtn" layoutX="212.0" layoutY="39.0" mnemonicParsing="false" onAction="#ClearAll" prefHeight="25.0" prefWidth="61.0" text="Clear All" />
+            <ComboBox fx:id="outputSize" layoutX="14.0" layoutY="74.0" prefHeight="25.0" prefWidth="111.0" promptText="Choose size" style="-fx-background-color: white;" />
+            <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="111.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/logoo.jpg" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Separator layoutX="291.0" layoutY="-3.0" prefHeight="10.0" prefWidth="931.0" style="-fx-background-color: #D3D3D3;" />
-      <ImageView fitHeight="39.0" fitWidth="59.0" layoutX="169.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resource/logoo.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="437.0" layoutY="764.0" prefHeight="25.0" prefWidth="80.0" text="BG-Image " textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="640.0" layoutY="764.0" prefHeight="25.0" prefWidth="80.0" text="Prod-Image " textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>
